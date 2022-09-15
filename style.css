@@ -36,15 +36,15 @@
     z-index: 10;
 }
 
-.text h1 {
+.text h2 {
     font-size: 5em;
     font-weight: 800;
     line-height: 1em;  
 }
 
-.text h1 {
-    font-size: 4em;
-    font-weight: 700;
+.text h3 {
+    font-size: 2em;
+    font-weight: 300;
     line-height: 1em;  
 }
 
