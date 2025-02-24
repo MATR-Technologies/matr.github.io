@@ -10876,6 +10876,28 @@ html {
   background-repeat: no-repeat;
 }
 
+.bg-image-ag {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-image-ag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/TheFinalAerialFarm.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* Adjust this for opacity */
+  z-index: -1;
+}
+
 .carousel-caption {
   transform: translateY(-50%);
   bottom: 0;
