@@ -28,27 +28,9 @@
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">News Home</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Case Studies</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Case Studies Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-1.html">Simulated Environment Construction</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-2.html">Point Cloud Localization</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-3.html">Skid-Steer Automation</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-4.html">Embedded Media Player</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-5.html">Control System Redesign</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-6.html">Nvidia Vision Integration</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-7.html">Electrical System Mapping</a></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="blog-home.html">News</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio-overview.html">Portfolio</a></li>
                         </ul>
                     </div>
                 </div>
@@ -59,10 +41,10 @@
                     <div class="row gx-5">
                         <div class="col-lg-3">
                             <div class="d-flex align-items-center mt-lg-5 mb-4">
-                                <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                                <img class="img-fluid rounded-circle" src="assets/christian.jpg" style="width: 64px; height: 64px;" alt="..." />
                                 <div class="ms-3">
-                                    <div class="fw-bold">Valerie Luna</div>
-                                    <div class="text-muted">News, Business</div>
+                                    <div class="fw-bold">Christian Sanchez</div>
+                                    <div class="text-muted">Engineer</div>
                                 </div>
                             </div>
                         </div>
@@ -72,67 +54,77 @@
                                 <!-- Post header-->
                                 <header class="mb-4">
                                     <!-- Post title-->
-                                    <h1 class="fw-bolder mb-1">Welcome to Blog Post!</h1>
+                                    <h1 class="fw-bolder mb-1">Humidity: The Bane of Outdoor Electronics</h1>
                                     <!-- Post meta content-->
-                                    <div class="text-muted fst-italic mb-2">January 1, 2023</div>
+                                    <div class="text-muted fst-italic mb-2">May 20, 2025</div>
                                     <!-- Post categories-->
-                                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
-                                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
+                                    <a class="badge bg-primary text-decoration-none link-light" href="#!">Enclosures</a>
                                 </header>
                                 <!-- Preview image figure-->
-                                <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                                <figure class="mb-4"><img class="img-fluid rounded" src="assets/CondensationImage.JPG" alt="..." /></figure>
                                 <!-- Post content-->
                                 <section class="mb-5">
-                                    <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                                    <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                                    <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                                    <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
-                                    <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
-                                    <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                                <!-- Intro -->
+                                <p class="fs-5 mb-4">
+                                    Condensation inside an outdoor enclosure feels like <em>weather on the
+                                    inside</em>. Warm, moisture-laden air creeps in during the day, the sun goes
+                                    down, the box cools below dew-point, and—boom—droplets form on your circuit
+                                    board.
+                                </p>
+
+                                <!-- Why the usual “just seal it” fails -->
+                                <p class="fs-5 mb-4">
+                                    The gut reaction is to hermetically seal everything. That works&mdash;until
+                                    pressure swings balloon your gaskets or you trap a little moisture during
+                                    assembly and can’t get it back out. Heating the box is another trick, but
+                                    24/7 watt-burn doesn’t fly on low-power deployments.
+                                </p>
+
+                                <!-- Seals fatigue -->
+                                <p class="fs-5 mb-4">
+                                    Even perfect seals fatigue. Daily thermal cycles tug at rubber gaskets
+                                    until hairline gaps appear&mdash;now your “sealed” box is just a damp cave
+                                    waiting for the next cold snap.
+                                </p>
+
+                                <!-- Heading: smarter solution -->
+                                <h2 class="fw-bolder mb-4 mt-5">
+                                    Let It Breathe&mdash;But Don’t Let It Drown
+                                </h2>
+
+                                <!-- Breather vents + PTFE -->
+                                <p class="fs-5 mb-4">
+                                    Enter the pressure-equalizing breather vent. The ePTFE membrane acts like
+                                    Gore-Tex&mdash;air diffuses, liquid water stays out. Your enclosure ex-
+                                    hales and inhales slowly, sparing the gasket and slashing condensation
+                                    risk.
+                                </p>
+
+                                <!-- Desiccant / HCS -->
+                                <p class="fs-5 mb-4">
+                                    Add a humidity-control sheet (HCS) such as FiberSource’s Active-S line.
+                                    Unlike plain silica gel, these polymer sheets <strong>absorb and
+                                    release</strong> moisture, stabilizing RH around 40-60 % for years.
+                                </p>
+
+                                <!-- Combined recipe -->
+                                <p class="fs-5 mb-4">
+                                    The winning recipe:
+                                    <br>&bull; IP-rated enclosure and cable glands<br>
+                                    &bull; PTFE breather vent up high<br>
+                                    &bull; One or two Active-S sheets inside (mount on sidewall, not the bottom)<br>
+                                    &bull; Optional low-watt heater for deep-freeze nights
+                                </p>
+
+                                <!-- Closing thought -->
+                                <p class="fs-5 mb-4">
+                                    Follow that playbook and your COTS electronics can survive 5-10&nbsp;years
+                                    in the wild without growing a rainforest on the PCB. Moisture may be the
+                                    bane of outdoor electronics, but with smart breathing and a silent
+                                    humidity butler inside, it doesn’t stand a chance.
+                                </p>
                                 </section>
                             </article>
-                            <!-- Comments section-->
-                            <section>
-                                <div class="card bg-light">
-                                    <div class="card-body">
-                                        <!-- Comment form-->
-                                        <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
-                                        <!-- Comment with nested comments-->
-                                        <div class="d-flex mb-4">
-                                            <!-- Parent comment-->
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">Commenter Name</div>
-                                                If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
-                                                <!-- Child comment 1-->
-                                                <div class="d-flex mt-4">
-                                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                                    <div class="ms-3">
-                                                        <div class="fw-bold">Commenter Name</div>
-                                                        And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
-                                                    </div>
-                                                </div>
-                                                <!-- Child comment 2-->
-                                                <div class="d-flex mt-4">
-                                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                                    <div class="ms-3">
-                                                        <div class="fw-bold">Commenter Name</div>
-                                                        When you put money directly to a problem, it makes a good headline.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Single comment-->
-                                        <div class="d-flex">
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">Commenter Name</div>
-                                                When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
                         </div>
                     </div>
                 </div>
